@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The Small Group</title>
+
+<!-- CSS ============================================ -->
+
+<link href="blog.css" rel="stylesheet" type="text/css">
+<link href="comment.css" rel="stylesheet" type="text/css">
+
+<!-- FONTs ============================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Pushster&family=Righteous&display=swap" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<!-- JAVA SCRIPT ============================================ -->
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=3.3">
+</script>	
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+
+</head>
+
+<body>
+<div id="header">
+	<div id="tsg"><font size="6px" face='Bree Serif', Georgia, serif; color:#6a6969;>The Small <br />Group</font><a href="#"></a></div>
+	<ul id="tsg-menu">
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>  
+    </ul>
+</div>
+
+<div id="container">
+
+<!--Begin Response Section-->
+
+    <div id="response">
+    	<h1>Comments & Responses</h1>
+        <ul id="top-social">
+        	<li><a href="#" class="facebook">Facebook</a></li>
+            <li><a href="#" class="twitter">Twitter</a></li>
+            <li><a href="#" class="linkedin">LinkedIn</a></li>
+        </ul>
+        <div class="top-divider"></div>
+        <div class="content">
+        <img src="images/cross.jpg" width="257px" height="312px" />
+		    <h2>Let's look to the Cross...</h2>
+            <p>There's a regular morning occurence now in our home that I look forward to with a smile. Between 6 and 7 am every morning, I expect to hear the cry of our little girl, Lydia, as she shreilly cries out "Daddy, daddy, daddy..." from the bottom of the first floor stairs. Initially it was annoying knowing she could easily make the few stairs up to the main bedroom but will not do so....she instead will wait there no matter how long it took, for me to come down and get her! <br />
+Now when I think about it, I reflect on whether this isn't how we ought to come to God our father...to be able to look up from whatever the dire situations are that we face or the 'craziness' going on all around us in this world and cry out "father!" Like Lydia, shouldn't we all look up from life's 'stairewell bottoms' with her eyes fixed on nothing or no one but Jesus? Our daughter knows that if she calls that I will show up. This reminds me of what the writer of the book of Hebrews expects of us:<br /><br />
+<i>"Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us,looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God." - Hebrews 12:1-2.</i> <br /><br />Its shameful to say that some of the mornings when Lydia's calls ring out, I had called back out, "Lydia, come to daddy....come baby!" Especially on days when I had slept late, worked late or when the children have kept me up late at night. My justification for calling out are that <i>she can make the climb up</i> and <i>Oh, I am tired and need another hour, Lydia, please understand! :).</i> I can confirm that on days when this happens, my daughter only screams out louder for me to come get her. Little wonder Jesus admonishes we all be like children!<br /><br />
+Of course I will never leave my daughter screaming at the bottom of the stairs. Lydia knows this! It is also imperative that we grab this understanding that God almighty will never leave us when we focus and call on Him, for deliverance and our salvation. This the Bible makes clear in Isaiah 49 verse 15 and 16 <i>"Can a woman forget her nursing child, that she should have no compassion on the son of her womb? Even these may forget, yet I will not forget you.Behold, I have engraved you on the palms of my hands; your walls are continually before me."</i> <br /><br />What a message to get us smiling as we grope in the dark for our father with knowledge that <b>if we call, He will answer?</b></p>
+
+<p>Our prayer constantly should be "Father give us faith to come to you in all situations of life." This is definitely my strategy everyday 'these days' when the world seems to be folding on itself...earthquakes, tsunamis, wild fires, viruses, etc. Let's come to the cross and 'look up' because our father will show up with deliverance in His hands in Jesus name. Amen.</p>
+<br />
+<p><font face="pacifico" size="5px">Hassan Mathews <u>Abu</u></font></p> 
+            
+        </div>
+
+    <div class="bottom-divider"></div> 
+
+<!--Begin Comment Section--!>
+
+<section id="app">
+<div class="responsebox">
+<div class="row">
+<div class="col-6">
+<div class="comment">
+<p v-for="items in item" v-text="items"></p>
+</div><!--End Comment-->
+</div><!--End col -->
+</div><!-- End row -->
+
+<div class="row">
+        <div class="col-6">
+
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()" form="usrform"></textarea>
+<button v-on:click="resetItem()" class='primaryContained float-right' type="reset">Reset</button>
+<button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End responsebox -->
+</section><!-- end App -->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="js/script.js"></script>
+           
+    		</div>
+		</div>
+    </div>
+</section>
+
+
+<div id="social-footer"></div>
+</div>
+</div>
+
+</div>
+
+ 
+</body>
+</html>

@@ -1,0 +1,118 @@
+.ot0 {
+  background: #678aaa;
+  margin: 0px 43px;
+  padding-top: 5px;
+}
+
+.otopics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 0px 43px;
+  padding-top: 40px;
+
+  display: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+
+.otopics .ot1 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics .ot3 {
+  background: #678aaa;
+  transform: scale(0.98);
+}
+
+.otopics .ot1 {
+  background: #678aaa;
+  transform: scale(0.98);
+}
+
+.otopics .ot2 {
+  background: ;
+  transform: scale(0.98);
+}
+
+.otopics .ot2 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics .ot3 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics .ot4 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics .ot5 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics .ot6 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics .ot7 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics .ot8 {
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
+  border: 3px solid #333333;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.otopics > div:hover {
+  opacity: 0.7;
+  transform: rotateZ(deg);
+}
+
+.otopics p {
+  font-size: 20px;
+  float: auto;
+  text-align: center;
+}
